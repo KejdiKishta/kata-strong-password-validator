@@ -5,5 +5,76 @@
 }
 
 body {
-    background-color: orange;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    transition: border 0.3s ease;
+}
+
+input[type="password"]:focus {
+    border-color: #1a2a6c;
+    outline: none;
+}
+
+#validation-message {
+    text-align: left;
+}
+
+#validation-message p {
+    font-size: 14px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+/** if not valid */
+#validation-message .invalid {
+    color: red;
+}
+
+.invalid::before {
+    content: "✗";
+    margin-right: 10px;
+}
+
+/** if valid */
+#validation-message .valid {
+    color: green;
+}
+
+.valid::before {
+    content: "✓";
+    margin-right: 10px;
 }
