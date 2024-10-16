@@ -10,6 +10,24 @@
     <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
+
+    <!-- container -->
+    <div class="container">
+        <h2>Create your account</h2>
+        <!-- form -->
+        <form id="password-form">
+            <label for="password">Enter your password:</label>
+            <!-- input -->
+            <input type="password" id="password" name="password" placeholder="Your password" required>
+            <!-- validations -->
+            <div id="validation-message">
+                <p id="length" class="invalid">At least 8 characters</p>
+                <p id="uppercase" class="invalid">Contains an uppercase letter</p>
+                <p id="number" class="invalid">Contains a number</p>
+                <p id="special" class="invalid">Contains a special character</p>
+            </div>
+        </form>
+    </div>
     
     <!-- JS -->
     <script src="./main.js"></script>
