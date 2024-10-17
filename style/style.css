@@ -6,7 +6,8 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+    background-image: url('../assets/bg.png');
+    background-position: -250px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -65,7 +66,7 @@ input[type="password"]:focus {
 }
 
 .invalid::before {
-    content: "✗";
+    content: "\2718";
     margin-right: 10px;
 }
 
@@ -75,6 +76,15 @@ input[type="password"]:focus {
 }
 
 .valid::before {
-    content: "✓";
+    content: "\2714";
     margin-right: 10px;
+}
+
+/* progress bar */
+#progress {
+    margin-top: 30px;
+}
+
+img {
+    height: 170px;
 }
